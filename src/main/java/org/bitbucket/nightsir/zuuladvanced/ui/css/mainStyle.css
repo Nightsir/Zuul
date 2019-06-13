@@ -1,0 +1,24 @@
+* {
+	borderBoxBackgroundColor: #fff;
+	borderBoxBorderColor: #ccc;
+	
+	-fx-font-family: monospace;
+	-fx-font-size: 15;
+}
+
+.border {
+	-fx-background-color: borderBoxBackgroundColor;
+	-fx-border-color: borderBoxBorderColor;
+	-fx-border-insets: 0;
+	-fx-border-radius: 2;
+	-fx-focus-color: borderBoxBorderColor;
+	-fx-faint-focus-color: -fx-control-inner-background;
+}
+
+.border .content {
+	-fx-background-color: borderBoxBackgroundColor;
+}
+
+.unfocusable {
+	-fx-focus-traversable: false;
+}

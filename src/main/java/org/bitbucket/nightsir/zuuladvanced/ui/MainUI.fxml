@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.geometry.Insets?>
+<?import com.sun.javafx.scene.KeyboardShortcutsHandler?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="org.bitbucket.nightsir.zuuladvanced.ui.MainUIController"
+	stylesheets="@./css/mainStyle.css"
+	prefWidth="1280" prefHeight="720"
+	hgap="5" vgap="5"
+	fx:id="rootPane" >
+	
+	<padding>
+		<Insets top="5" right="5" bottom="5" left="5" />
+	</padding>
+	
+	<columnConstraints>
+		<ColumnConstraints percentWidth="75" />
+		<ColumnConstraints percentWidth="25" />
+	</columnConstraints>
+	
+	<rowConstraints>
+		<RowConstraints percentHeight="33" />
+		<RowConstraints vgrow="ALWAYS" />
+		<RowConstraints minHeight="100" maxHeight="100" />
+		<RowConstraints minHeight="30" maxHeight="30" />
+	</rowConstraints>
+
+	<TextArea fx:id="output" styleClass="unfocusable, border" editable="false" 
+		GridPane.columnIndex="0" GridPane.columnSpan="1" 
+		GridPane.rowIndex="0" GridPane.rowSpan="3" />
+	
+	<TextField fx:id="input" styleClass="border" onAction="#processInput"
+		GridPane.columnIndex="0" GridPane.columnSpan="2"
+		GridPane.rowIndex="3" GridPane.rowSpan="1" />
+	
+	<Canvas fx:id="miniMap"
+		GridPane.columnIndex="1" GridPane.columnSpan="1" 
+		GridPane.rowIndex="0" GridPane.rowSpan="1" />
+	
+	<TextArea fx:id="inventory" styleClass="unfocusable, border" editable="false"
+		GridPane.columnIndex="1" GridPane.columnSpan="1" 
+		GridPane.rowIndex="1" GridPane.rowSpan="1" />
+	
+	<TextArea fx:id="noDropInventory" styleClass="unfocusable, border" editable="false"
+		GridPane.columnIndex="1" GridPane.columnSpan="1" 
+		GridPane.rowIndex="2" GridPane.rowSpan="1" />
+</GridPane>
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.canvas.Canvas?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+	fx:controller="org.bitbucket.nightsir.zuuladvanced.ui.MapUIController"
+	stylesheets="@./css/mainStyle.css"
+	prefWidth="1280" prefHeight="720"
+	fx:id="rootPane" >
+	
+	<center>
+		<Canvas fx:id="map" />
+	</center>
+</BorderPane>
+
