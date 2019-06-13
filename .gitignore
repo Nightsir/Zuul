@@ -21,3 +21,14 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# Eclipse Files #
+.settings
+.project
+.classpath
+/bin
+
+# Gradle files (wrapper needs to be included) #
+.gradle
+/build
+!gradle-wrapper.jar
