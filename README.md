@@ -1,2 +1,2 @@
 # Zuul
-Zuul is an old school project done in 2016.
+Zuul is an homage to the old Zork game. It was done in 2016.
